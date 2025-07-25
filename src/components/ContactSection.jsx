@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import {
-  FiMail,
-  FiMapPin,
-  FiPhone,
+import { 
+  FiMail, 
+  FiMapPin, 
+  FiPhone, 
   FiSend,
+  FiTwitter,
   FiLinkedin,
-  FiGithub,
-  FiFacebook,
+  FiGithub
 } from "react-icons/fi";
 
 const ContactSection = () => {
@@ -44,21 +44,21 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    {
-      name: "Twitter",
-      icon: <FiFacebook className="text-xl" />,
-      url: "https://www.facebook.com/share/14Mh46ohWA5/",
+    { 
+      name: "Twitter", 
+      icon: <FiTwitter className="text-xl" />,
+      url: "https://twitter.com/yourusername" 
     },
-    {
-      name: "LinkedIn",
+    { 
+      name: "LinkedIn", 
       icon: <FiLinkedin className="text-xl" />,
-      url: "https://www.linkedin.com/in/hamza-sheikh-3a551231b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      url: "https://linkedin.com/in/yourusername" 
     },
-    {
-      name: "GitHub",
+    { 
+      name: "GitHub", 
       icon: <FiGithub className="text-xl" />,
-      url: "https://github.com/hamzest007",
-    },
+      url: "https://github.com/yourusername" 
+    }
   ];
 
   return (
@@ -85,21 +85,14 @@ const ContactSection = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
             {/* Contact Information */}
-            <motion.div
-              className="space-y-6 md:space-y-8"
-              variants={itemVariants}
-            >
+            <motion.div className="space-y-6 md:space-y-8" variants={itemVariants}>
               <div className="flex items-start space-x-3 md:space-x-4">
                 <div className="p-2 md:p-3 bg-indigo-500/10 rounded-full">
                   <FiMail className="text-indigo-400 text-lg md:text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-base md:text-lg font-semibold mb-1">
-                    Email
-                  </h3>
-                  <p className="text-gray-300 text-sm md:text-base">
-                    hamzasheikh4000@gmail.com
-                  </p>
+                  <h3 className="text-base md:text-lg font-semibold mb-1">Email</h3>
+                  <p className="text-gray-300 text-sm md:text-base">hamzasheikh4000@gmail.com</p>
                 </div>
               </div>
 
@@ -108,12 +101,8 @@ const ContactSection = () => {
                   <FiPhone className="text-indigo-400 text-lg md:text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-base md:text-lg font-semibold mb-1">
-                    Phone
-                  </h3>
-                  <p className="text-gray-300 text-sm md:text-base">
-                    +92 3122264880
-                  </p>
+                  <h3 className="text-base md:text-lg font-semibold mb-1">Phone</h3>
+                  <p className="text-gray-300 text-sm md:text-base">+92 3122264880</p>
                 </div>
               </div>
 
@@ -122,19 +111,13 @@ const ContactSection = () => {
                   <FiMapPin className="text-indigo-400 text-lg md:text-xl" />
                 </div>
                 <div>
-                  <h3 className="text-base md:text-lg font-semibold mb-1">
-                    Location
-                  </h3>
-                  <p className="text-gray-300 text-sm md:text-base">
-                    Karachi, Pakistan
-                  </p>
+                  <h3 className="text-base md:text-lg font-semibold mb-1">Location</h3>
+                  <p className="text-gray-300 text-sm md:text-base">Karachi, Pakistan</p>
                 </div>
               </div>
 
               <div className="pt-4 md:pt-6">
-                <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
-                  Connect with me
-                </h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">Connect with me</h3>
                 <div className="flex space-x-3 md:space-x-4">
                   {socialLinks.map((social) => (
                     <motion.a

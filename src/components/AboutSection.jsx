@@ -19,15 +19,13 @@ const AboutSection = () => {
       role: "Frontend Developer",
       company: "Remote",
       period: "2024 - Present",
-      description:
-        "Developing responsive web applications using React and modern JavaScript frameworks.",
+      description: "Developing responsive web applications using React and modern JavaScript frameworks.",
     },
     {
       role: "Web Developer Intern",
       company: "Remote",
       period: "2024 - 2025",
-      description:
-        "Assisted in building and maintaining client websites with HTML, CSS, and JavaScript.",
+      description: "Assisted in building and maintaining client websites with HTML, CSS, and JavaScript.",
     },
   ];
 
@@ -56,8 +54,8 @@ const AboutSection = () => {
   };
 
   const handleDownloadCV = () => {
-    const cvUrl = "/documents/Hamza_Sheikh.pdf";
-
+    // Replace with your actual CV path in public folder
+    const cvUrl = "/documents/Hamza_Sheikh_CV.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
     link.download = "Hamza_Sheikh_Frontend_Developer_CV.pdf";
@@ -78,14 +76,14 @@ const AboutSection = () => {
         <motion.section className="mb-16 md:mb-20" variants={itemVariants}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <motion.h2
+              <motion.h2 
                 className="text-3xl md:text-4xl font-bold mb-6"
                 variants={itemVariants}
               >
                 About <span className="text-indigo-500">Me</span>
               </motion.h2>
-
-              <motion.p
+              
+              <motion.p 
                 className="text-gray-300 mb-4 md:mb-6 leading-relaxed text-sm md:text-base"
                 variants={itemVariants}
               >
@@ -94,8 +92,8 @@ const AboutSection = () => {
                 React ecosystem and love creating intuitive, performant user
                 interfaces.
               </motion.p>
-
-              <motion.p
+              
+              <motion.p 
                 className="text-gray-300 mb-6 md:mb-8 leading-relaxed text-sm md:text-base"
                 variants={itemVariants}
               >
@@ -104,8 +102,8 @@ const AboutSection = () => {
                 you can find me contributing to open-source projects or
                 exploring new technologies.
               </motion.p>
-
-              <motion.div
+              
+              <motion.div 
                 className="flex flex-wrap gap-3 md:gap-4"
                 variants={itemVariants}
               >
@@ -118,7 +116,7 @@ const AboutSection = () => {
                   <FiDownload className="mr-2" />
                   Download CV
                 </motion.button>
-
+                
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -132,8 +130,8 @@ const AboutSection = () => {
                 </motion.div>
               </motion.div>
             </div>
-
-            <motion.div
+            
+            <motion.div 
               className="order-1 lg:order-2 flex justify-center"
               variants={itemVariants}
             >
@@ -141,10 +139,10 @@ const AboutSection = () => {
                 <motion.img
                   initial={{ scale: 0.9 }}
                   animate={{ scale: 1 }}
-                  transition={{
+                  transition={{ 
                     type: "spring",
                     stiffness: 100,
-                    damping: 10,
+                    damping: 10
                   }}
                   src={images.profile}
                   alt="Hamza professional portrait"
@@ -158,17 +156,17 @@ const AboutSection = () => {
 
         {/* Skills Section */}
         <motion.section className="mb-16 md:mb-20" variants={itemVariants}>
-          <motion.h2
+          <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center"
             variants={itemVariants}
           >
             My <span className="text-indigo-500">Skills</span>
           </motion.h2>
-
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {skills.map((skill, index) => (
-              <motion.div
-                key={index}
+              <motion.div 
+                key={index} 
                 className="mb-4 md:mb-6"
                 variants={itemVariants}
               >
@@ -176,9 +174,7 @@ const AboutSection = () => {
                   <span className="font-medium text-gray-200 text-sm md:text-base">
                     {skill.name}
                   </span>
-                  <span className="text-gray-400 text-sm md:text-base">
-                    {skill.level}
-                  </span>
+                  <span className="text-gray-400 text-sm md:text-base">{skill.level}</span>
                 </div>
                 <div className="w-full bg-gray-700 rounded-full h-2 md:h-2.5">
                   <motion.div
@@ -195,13 +191,13 @@ const AboutSection = () => {
 
         {/* Experience Section */}
         <motion.section variants={itemVariants}>
-          <motion.h2
+          <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center"
             variants={itemVariants}
           >
             Work <span className="text-indigo-500">Experience</span>
           </motion.h2>
-
+          
           <div className="space-y-6 md:space-y-8">
             {experiences.map((exp, index) => (
               <motion.div
@@ -215,16 +211,12 @@ const AboutSection = () => {
                   <h3 className="text-lg md:text-xl font-bold text-indigo-400">
                     {exp.role}
                   </h3>
-                  <span className="text-gray-400 text-sm md:text-base">
-                    {exp.period}
-                  </span>
+                  <span className="text-gray-400 text-sm md:text-base">{exp.period}</span>
                 </div>
                 <h4 className="text-base md:text-lg font-medium text-gray-200 mb-2 md:mb-3">
                   {exp.company}
                 </h4>
-                <p className="text-gray-300 text-sm md:text-base">
-                  {exp.description}
-                </p>
+                <p className="text-gray-300 text-sm md:text-base">{exp.description}</p>
               </motion.div>
             ))}
           </div>
