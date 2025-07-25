@@ -11,16 +11,17 @@ const ProjectSection = () => {
         "A full-featured online store with cart functionality, user authentication, and payment processing.",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       image: "ecommerce.png",
-      github: "#",
+      github: "https://github.com/hamzest007/ecommerce-platform", 
       live: "https://hamza-ecommerce.netlify.app",
     },
+
     {
       id: 2,
       title: "Task Management App",
       description:
         "Productivity application with drag-and-drop interface, team collaboration, and real-time updates.",
       tags: ["React", "Firebase", "Tailwind CSS"],
-      image: "taskapp.jpg", 
+      image: "taskapp.jpg",
       github: "#",
       live: "#",
     },
@@ -40,7 +41,7 @@ const ProjectSection = () => {
       description:
         "Modern responsive portfolio showcasing my projects and skills with smooth animations.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "portfolio.png", 
+      image: "portfolio.png",
       github: "#",
       live: "https://hamza-sheikh-portfolio.netlify.app",
     },
