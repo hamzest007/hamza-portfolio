@@ -1,19 +1,40 @@
 {
+<<<<<<< HEAD
   "name": "hamza-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+=======
+  "name": "ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "@stripe/react-stripe-js": "^3.8.0",
+    "@stripe/stripe-js": "^7.6.1",
+>>>>>>> 4da22c2cd887abafa7bdba6f488aceb51870f07e
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "emailjs-com": "^3.2.0",
+=======
+    "axios": "^1.11.0",
+>>>>>>> 4da22c2cd887abafa7bdba6f488aceb51870f07e
     "framer-motion": "^12.23.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.7.0",
     "react-scripts": "5.0.1",
+=======
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.7.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.5",
+>>>>>>> 4da22c2cd887abafa7bdba6f488aceb51870f07e
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,7 +62,10 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@tailwindcss/postcss": "^4.1.11",
+=======
+>>>>>>> 4da22c2cd887abafa7bdba6f488aceb51870f07e
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.1"

@@ -1,0 +1,142 @@
+const deals = [
+  {
+    id: 1,
+    title: "Wireless Earbuds",
+    discount: 45,
+    originalPrice: 129.99,
+    dealPrice: 69.99,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df",
+    sold: 72,
+    total: 100,
+    timeLeft: "08:45:23",
+  },
+  {
+    id: 2,
+    title: "Smart Watch Pro",
+    discount: 30,
+    originalPrice: 199.99,
+    dealPrice: 139.99,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    sold: 58,
+    total: 100,
+    timeLeft: "05:22:17",
+  },
+  {
+    id: 3,
+    title: "Bluetooth Speaker",
+    discount: 55,
+    originalPrice: 89.99,
+    dealPrice: 39.99,
+    image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb",
+    sold: 89,
+    total: 100,
+    timeLeft: "12:15:42",
+  },
+  {
+    id: 4,
+    title: "4K Action Camera",
+    discount: 40,
+    originalPrice: 249.99,
+    dealPrice: 149.99,
+    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+    sold: 42,
+    total: 100,
+    timeLeft: "10:30:15",
+  },
+];
+
+const relatedProducts = [
+  {
+    id: 100,
+    name: "Wireless Noise-Cancelling Headphones",
+    price: 199.99,
+    originalPrice: 249.99,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    isFavorite: false,
+    colors: ["black", "silver", "blue"],
+  },
+  {
+    id: 222,
+    name: "Bluetooth Portable Speaker",
+    price: 89.99,
+    originalPrice: 119.99,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb",
+    isFavorite: true,
+    colors: ["black", "red"],
+  },
+  {
+    id: 234,
+    name: "Smart Watch Pro Series",
+    price: 179.99,
+    originalPrice: 229.99,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    isFavorite: false,
+    colors: ["black", "gold", "rose gold"],
+  },
+  {
+    id: 333,
+    name: "Wireless Charging Pad",
+    price: 29.99,
+    originalPrice: 39.99,
+    rating: 4.3,
+    image:
+      "https://images.unsplash.com/photo-1598668920258-04a8c9c0ae02?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdpcmVsZXNzJTIwY2hhcmdpbmclMjBwYWR8ZW58MHx8MHx8fDA%3D",
+    isFavorite: false,
+    colors: ["white", "black"],
+  },
+];
+  const televisions = [
+    {
+      id: 123,
+      brand: 'Sony',
+      model: 'Bravia XR A95K',
+      price: 2499.99,
+      originalPrice: 2999.99,
+      rating: 4.8,
+      image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6',
+      features: ['4K OLED', '120Hz Refresh', 'Google TV', 'Dolby Vision'],
+      sizes: ['55"', '65"', '75"'],
+      isNew: true
+    },
+    {
+      id: 325,
+      brand: 'LG',
+      model: 'OLED C3 Series',
+      price: 1799.99,
+      originalPrice: 2199.99,
+      rating: 4.7,
+      image: 'https://images.unsplash.com/photo-1593305841991-05c297ba4575',
+      features: ['4K OLED', '144Hz Refresh', 'webOS', 'HDR10'],
+      sizes: ['48"', '55"', '65"', '77"'],
+      isNew: false
+    },
+    {
+      id: 536,
+      brand: 'Samsung',
+      model: 'QLED QN90C',
+      price: 1999.99,
+      originalPrice: 2599.99,
+      rating: 4.6,
+      image: 'https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9',
+      features: ['Neo QLED', '120Hz Refresh', 'Tizen OS', 'Quantum HDR'],
+      sizes: ['55"', '65"', '75"', '85"'],
+      isNew: true
+    },
+    {
+      id: 766,
+      brand: 'TCL',
+      model: '6-Series Roku TV',
+      price: 899.99,
+      originalPrice: 1099.99,
+      rating: 4.4,
+      image: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1',
+      features: ['4K QLED', '144Hz Refresh', 'Roku TV', 'Dolby Vision'],
+      sizes: ['55"', '65"', '75"'],
+      isNew: false
+    }
+  ]
+
+export { deals, relatedProducts , televisions};
