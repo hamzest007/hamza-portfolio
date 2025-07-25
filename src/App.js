@@ -1,14 +1,13 @@
 import {BrowserRouter , Routes , Route } from "react-router-dom";
-import {AboutPage , ContactPage , Home , ProjectsPage} from "./pages"
+import {AboutPage , ContactPage , HomePage, ProjectsPage} from "./pages"
 import {NavSection } from "./components"
- 
 
 const App = () => {
   return (
     <BrowserRouter>
         <NavSection />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />

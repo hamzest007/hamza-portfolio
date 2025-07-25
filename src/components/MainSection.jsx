@@ -28,7 +28,7 @@ const MainSection = () => {
   };
 
   return (
-    <main className="px-4 md:px-12 lg:px-24 bg-gray-900 text-white py-20 md:py-28">
+    <main className="px-4 md:px-12 lg:px-24 bg-gray-900 text-white h-4/6 py-20 md:py-28">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 items-center gap-12"

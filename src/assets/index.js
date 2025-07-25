@@ -11,6 +11,11 @@ const images = {
   reduxtoolkit: require("./reduxtoolkit.png"),
   reactjs: require("./react.png"),
   nodejs: require("./nodejs.png"),
-  mongodb: require("./mongodb.svd.svg")
+  mongodb: require("./mongodb.png"),
+  express: require("./express.png"),
+  stripe: require("./stripe.jpeg"),
+  framer: require("./framer.png"),
+  firebase: require("./firebase.png"),
+  api: require("./api.png"),
 };
 export { images };

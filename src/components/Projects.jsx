@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { images } from "../assets";
 
 const Projects = () => {
   const projects = [
@@ -8,7 +9,22 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A full-featured online store with cart functionality, user authentication, and payment processing.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      tags: [
+        "React.js",
+        "Express.js",
+        "Node.js",
+        "MongoDB",
+        "Stripe",
+        "Redux toolkit",
+      ],
+      icon: [
+        images.reactjs,
+        images.express,
+        images.nodejs,
+        images.mongodb,
+        images.stripe,
+        images.reduxtoolkit,
+      ],
       image: "ecommerce.png",
       github: "https://github.com/hamzest007/ecommerce-platform",
       live: "https://hamza-ecommerce.netlify.app",
@@ -18,18 +34,25 @@ const Projects = () => {
       title: "Task Management App",
       description:
         "Productivity application with drag-and-drop interface, team collaboration, and real-time updates.",
-      tags: ["React", "Firebase", "Tailwind CSS"],
-      image: "taskapp.jpg",
-      github: "#",
-      live: "#",
+      tags: ["React", "Express", "MongoDB", "Tailwind CSS"],
+      icon: [
+        images.reactjs,
+        images.express,
+        images.mongodb,
+        images.tailwindcss,
+      ],
+      image: "task.jpeg",
+      github: "https://github.com/hamzest007/task-management-app",
+      live: "https://hamza-task-manager.netlify.app",
     },
     {
       id: 3,
       title: "Weather Dashboard",
       description:
         "Interactive weather application with 5-day forecasts, location search, and responsive design.",
-      tags: ["JavaScript", "API Integration", "CSS3"],
-      image: "weather.jpg",
+      tags: ["React.js", "API Integration", "CSS3"],
+      icon: [images.reactjs, images.css, images.api],
+      image: "weather.jpeg",
       github: "#",
       live: "#",
     },
@@ -39,6 +62,7 @@ const Projects = () => {
       description:
         "Modern responsive portfolio showcasing my projects and skills with smooth animations.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
+      icon: [images.reactjs, images.tailwindcss, images.framer],
       image: "portfolio.png",
       github: "https://github.com/hamzest007/hamzasheikh-portfolio",
       live: "https://hamza-sheikh-portfolio.netlify.app",
@@ -81,9 +105,16 @@ const Projects = () => {
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-3 py-1 bg-gray-700 text-sm rounded-full text-indigo-300"
+                      className="px-3 py-1 flex items-center gap-2 bg-gray-700 text-sm rounded-full text-indigo-300"
                     >
                       {tag}
+                      {project.icon && project.icon[index] && (
+                        <img
+                          src={project.icon[index]}
+                          className="w-5 h-5 rounded-full"
+                          alt={tag}
+                        />
+                      )}
                     </span>
                   ))}
                 </div>
