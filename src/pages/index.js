@@ -9,6 +9,7 @@ import ProductDetails from "./ProductDetailPage/ProductDetails";
 import Login from "./LoginPage/Login";
 import Signup from "./SignupPage/Signup";
 import TermsOfService from "./TermsOfServicePage/TermsOfService";
+import CheckoutPage from "./CheckoutPage/CheckoutPage"
 import ForgotPassword from "./ForgotPasswordPage/ForgotPassword";
 
 export {
@@ -24,4 +25,5 @@ export {
   Signup,
   ForgotPassword,
   TermsOfService,
+  CheckoutPage
 };

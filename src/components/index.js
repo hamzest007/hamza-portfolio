@@ -8,6 +8,7 @@ import LoadingSpinner from "./LoadingSpinner";
 import Footer from "./Footer";
 import Brand from "./Brand";
 import TeamCard from "./TeamCard";
+import CheckoutForm from "./CheckoutForm"
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Footer,
   Brand,
   TeamCard,
+  CheckoutForm
 };
